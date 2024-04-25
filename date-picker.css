@@ -1,0 +1,63 @@
+.v-date-picker
+{
+    cursor: pointer;
+}
+
+.v-date-picker-holder
+{
+	z-index: 9999 !important;
+    position: fixed;
+	background-color: Black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.v-date-picker-table
+{
+    z-index: 99999 !important;
+    position: fixed;
+    background-color: White;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border-radius: 2px;
+    box-shadow: 0 3px 6px 0px #757575;
+    margin: 0px !important;
+}
+
+.v-date-picker-table table
+{
+    width: 100% !important;
+}
+
+.v-date-picker-table td
+{
+    padding: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .v-date-picker-table
+    {
+        position: absolute;
+        top: 5vw !important;
+        left: 5vw !important;
+        width: 90vw;
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+    }
+
+    .v-date-picker-table td
+    {
+        padding: 2vw;
+        font-size: 4vw;
+    }
+}
